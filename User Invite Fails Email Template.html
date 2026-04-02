@@ -58,110 +58,40 @@
           <tr>
             <td style="padding:24px;">
               <h1 style="margin:0; font-size:20px; font-weight:600; color:#101828; line-height:28px;">
-                Equipment Due for Calibration within 30 Days
+                Action Required: Invitation Failed
               </h1>
 
               <p style="margin:24px 0 0 0; font-size:16px; color:#344054; line-height:24px;">
-                Hello {{Team/name}}
+                Hello {{Inviter Name}}
               </p>
 
               <p style="margin:16px 0 0 0; font-size:16px; line-height:24px; color:#344054;">
-                The following equipment items have calibration due within the next 30 days.
-                Please review the list and schedule calibration to ensure compliance.
+                The invitation sent to {{InviteeFullName}} could not be delivered.
+              </p>
+
+              <p style="margin:16px 0 0 0; font-size:16px; line-height:24px; color:#344054;">
+                You must update the email or resend the invitation after correcting the issue.
               </p>
             </td>
           </tr>
 
-          <!-- Equipment List Heading -->
+          <!-- Failure Details Heading -->
           <tr>
-            <td style="padding:0 24px 16px 24px;">
+            <td style="padding:0 24px 8px 24px;">
               <h2 style="margin:0; font-size:16px; font-weight:600; color:#344054; line-height:24px;">
-                Equipment List
+                Failure details
               </h2>
             </td>
           </tr>
 
-          <!-- Equipment Cards Row (2 Columns) -->
+          <!-- Failure Details -->
           <tr>
             <td style="padding:0 24px 24px 24px;">
               <table width="100%" cellpadding="0" cellspacing="0" border="0">
                 <tr>
 
-                  <!-- LEFT CARD -->
-                  <td class="mobile-stack" width="50%" valign="top" style="padding-right:8px;">
-
-                    <table width="100%" cellpadding="0" cellspacing="0" border="0"
-                      style="border:1px solid #EEEEEE; border-radius:8px;">
-
-                      <!-- Card Header -->
-                      <tr>
-                        <td style="padding:12px;">
-                          <table width="100%" cellpadding="0" cellspacing="0" border="0"
-                            style="border-bottom:1px solid #eeeeee; padding-bottom:12px;">
-                            <tr>
-                              <td style="font-size:14px; font-weight:600; color:#344054;">
-                                E-MTG VB01747
-                              </td>
-                              <td align="right">
-                                <span style="background:#faf7ec;
-                                            color:#CCAD3F;
-                                            font-size:12px;
-                                            padding:5px 12px;
-                                            border-radius:7px;
-                                            border:1px solid #CCAD3F;
-                                            display:inline-block;">
-                                  Due Soon
-                                </span>
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                      </tr>
-
-                      <!-- Card Body -->
-                      <tr>
-                        <td style="padding:12px; padding-top:0;
-                                  font-size:12px; color:#4f4f4f; line-height:18px;">
-                          <table width="100%">
-                            <tr>
-                              <td style="padding-bottom:6px;">Serial Number</td>
-                              <td align="right" style="padding-bottom:6px; color:#333333; font-weight:500;">
-                                6545-01747
-                              </td>
-                            </tr>
-                            <tr>
-                              <td style="padding-bottom:6px;">Manufacturer</td>
-                              <td align="right" style="padding-bottom:6px; color:#333333; font-weight:500;">
-                                Flow Valve
-                              </td>
-                            </tr>
-                            <tr>
-                              <td style="padding-bottom:6px;">Type</td>
-                              <td align="right" style="padding-bottom:6px; color:#333333; font-weight:500;">
-                                Typenew
-                              </td>
-                            </tr>
-                            <tr>
-                              <td style="padding-bottom:6px;">Calibration Due Date</td>
-                              <td align="right" style="padding-bottom:6px; color:#333333; font-weight:500;">
-                                07/16/2021
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>Facility</td>
-                              <td align="right" style="color:#333333; font-weight:500;">
-                                Plug Valve
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                      </tr>
-
-                    </table>
-                  </td>
-
                   <!-- RIGHT CARD -->
-                  <td class="mobile-stack" width="50%" valign="top" style="padding-left:8px;">
+                  <td class="mobile-stack" width="50%" valign="top">
 
                     <table width="100%" cellpadding="0" cellspacing="0" border="0"
                       style="border:1px solid #EEEEEE; border-radius:8px;">
@@ -173,7 +103,7 @@
                             style="border-bottom:1px solid #eeeeee; padding-bottom:12px;">
                             <tr>
                               <td style="font-size:14px; font-weight:600; color:#344054;">
-                                E-MTG VB01747
+                                Robert Mike
                               </td>
                               <td align="right">
                                 <span style="background:#fdefef;
@@ -183,7 +113,7 @@
                                             border-radius:7px;
                                             border:1px solid #EB5757;
                                             display:inline-block;">
-                                  Overdue
+                                  Failed
                                 </span>
                               </td>
                             </tr>
@@ -197,33 +127,21 @@
                                   font-size:12px; color:#4f4f4f; line-height:18px;">
                           <table width="100%">
                             <tr>
-                              <td style="padding-bottom:6px;">Serial Number</td>
+                              <td style="padding-bottom:6px;">Invitee Email</td>
                               <td align="right" style="padding-bottom:6px; color:#333333; font-weight:500;">
-                                6545-01747
+                                {{Invitee Email}}
                               </td>
                             </tr>
                             <tr>
-                              <td style="padding-bottom:6px;">Manufacturer</td>
+                              <td style="padding-bottom:6px;">Reason</td>
                               <td align="right" style="padding-bottom:6px; color:#333333; font-weight:500;">
-                                Flow Valve
+                                {{Failure Reason}}
                               </td>
                             </tr>
                             <tr>
-                              <td style="padding-bottom:6px;">Type</td>
+                              <td style="padding-bottom:6px;">Timestamp</td>
                               <td align="right" style="padding-bottom:6px; color:#333333; font-weight:500;">
-                                Typenew
-                              </td>
-                            </tr>
-                            <tr>
-                              <td style="padding-bottom:6px;">Calibration Due Date</td>
-                              <td align="right" style="padding-bottom:6px; color:#333333; font-weight:500;">
-                                07/16/2021
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>Facility</td>
-                              <td align="right" style="color:#333333; font-weight:500;">
-                                Plug Valve
+                                {{Failure_Timestamp}}
                               </td>
                             </tr>
                           </table>
@@ -233,26 +151,6 @@
                     </table>
                   </td>
 
-                </tr>
-              </table>
-            </td>
-          </tr>
-
-          <!-- Warning Box -->
-          <tr>
-            <td style="padding:0 24px 24px 24px;">
-              <table width="100%" cellpadding="0" cellspacing="0" border="0"
-                style="background:#fefaee; border-radius:8px; padding:8px 12px;">
-                <tr>
-                  <td valign="top" style="width:22px; padding-right: 8px; padding-top: 2px;">
-                    <img src="https://neosgold.blob.core.windows.net/public-images/warning.png" width="20" alt="Warning" style="display:block; border:0;">
-                  </td>
-                  <td style="font-size:14px;
-                             color:#333333;
-                             line-height:20px;">
-                    To ensure continuous operation, please schedule calibration
-                    or decommission the equipment if it is no longer needed.
-                  </td>
                 </tr>
               </table>
             </td>
